@@ -1,9 +1,35 @@
 import type { Metadata } from "next";
 import "./globals.css";
 
+const title = "Adventure Advisor";
+const description =
+  "Best sport · best spot · best weather — find your ideal adventure for the upcoming weekend.";
+
+// Absolute base for og:image URLs. WhatsApp and friends need a fully-qualified
+// URL; this resolves from the deploy env, falling back to localhost in dev.
+const siteUrl =
+  process.env.NEXT_PUBLIC_SITE_URL ??
+  (process.env.VERCEL_URL
+    ? `https://${process.env.VERCEL_URL}`
+    : "http://localhost:3000");
+
 export const metadata: Metadata = {
-  title: "Adventure Advisor",
-  description: "What adventurous activity should I do this weekend?",
+  metadataBase: new URL(siteUrl),
+  title,
+  description,
+  // og:image is supplied automatically by app/opengraph-image.tsx.
+  openGraph: {
+    type: "website",
+    title,
+    description,
+    siteName: title,
+    url: "/",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title,
+    description,
+  },
 };
 
 // Set the theme class before paint to avoid a flash of the wrong theme.
