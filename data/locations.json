@@ -1,0 +1,86 @@
+[
+  {
+    "name": "Surrey Hills (Holmbury / Leith Hill)",
+    "lat": 51.165,
+    "lon": -0.36,
+    "activities": ["mountain-biking", "trail-running"],
+    "notes": "Classic singletrack and steep climbs ~1h from SW London."
+  },
+  {
+    "name": "Swinley Forest",
+    "lat": 51.39,
+    "lon": -0.715,
+    "activities": ["mountain-biking", "trail-running"],
+    "notes": "Fast, sandy purpose-built MTB trails — drains well after rain."
+  },
+  {
+    "name": "Box Hill",
+    "lat": 51.25,
+    "lon": -0.31,
+    "activities": ["road-cycling", "trail-running", "running"],
+    "notes": "The Zig Zag Road climb; busy on weekends."
+  },
+  {
+    "name": "Richmond Park",
+    "lat": 51.442,
+    "lon": -0.281,
+    "activities": ["road-cycling", "running"],
+    "notes": "Closest spin / run loop; flat-ish, deer everywhere."
+  },
+  {
+    "name": "Stanage Edge (Peak District)",
+    "lat": 53.345,
+    "lon": -1.633,
+    "activities": ["climbing", "trail-running", "mountain-biking"],
+    "notes": "Iconic gritstone edge. Long drive; best as a full day."
+  },
+  {
+    "name": "Portland (Dorset)",
+    "lat": 50.535,
+    "lon": -2.43,
+    "activities": ["climbing"],
+    "notes": "Sunny south-coast limestone sport climbing; sea cliffs."
+  },
+  {
+    "name": "Snowdonia (Llanberis)",
+    "lat": 53.12,
+    "lon": -4.125,
+    "activities": ["climbing", "trail-running", "mountain-biking"],
+    "notes": "Big mountain days; weather changes fast. Long haul from London."
+  },
+  {
+    "name": "Lake District (Keswick)",
+    "lat": 54.6,
+    "lon": -3.135,
+    "activities": ["climbing", "trail-running", "mountain-biking"],
+    "notes": "Fells and crags; a 5h+ drive — weekend-trip territory."
+  },
+  {
+    "name": "Chiltern Hills (Wendover)",
+    "lat": 51.76,
+    "lon": -0.74,
+    "activities": ["road-cycling", "trail-running", "mountain-biking"],
+    "notes": "Rolling chalk hills and beech woods NW of London."
+  },
+  {
+    "name": "Forest of Dean",
+    "lat": 51.79,
+    "lon": -2.58,
+    "activities": ["mountain-biking", "trail-running"],
+    "notes": "Flowy MTB trails and a relaxed cycle network."
+  },
+  {
+    "name": "Harrison's Rocks (Tunbridge Wells)",
+    "lat": 51.1,
+    "lon": 0.155,
+    "activities": ["climbing", "trail-running"],
+    "notes": "Southern sandstone bouldering / top-roping; dries slowly."
+  },
+  {
+    "name": "South Downs (Devil's Dyke)",
+    "lat": 50.885,
+    "lon": -0.21,
+    "activities": ["road-cycling", "trail-running", "running"],
+    "notes": "Open chalk downland with sea views above Brighton."
+  }
+]

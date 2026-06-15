@@ -1,0 +1,70 @@
+@import "tailwindcss";
+
+/* Leaflet's CSS (map tiles, controls, marker positioning). */
+@import "leaflet/dist/leaflet.css";
+
+/* Enable class-based dark mode (toggled on <html class="dark">) instead of
+   relying only on the OS preference. */
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* "Alpine Dusk" palette ---------------------------------------------------
+   Brand gradient: indigo → cyan, with amber as a warm spark accent.
+   Surfaces are warm-neutral in light mode, deep navy in dark mode. */
+:root {
+  --text: #15233b;
+  color-scheme: light;
+}
+
+.dark {
+  --text: #e9eef9;
+  color-scheme: dark;
+}
+
+html,
+body {
+  color: var(--text);
+}
+
+/* Layered gradient-mesh background — soft indigo / cyan / amber glows on a
+   cool off-white, so it reads as depth rather than flat white. Fixed so it
+   stays put while the page scrolls. */
+body {
+  min-height: 100vh;
+  background-color: #eef1f7;
+  background-image:
+    radial-gradient(45rem 45rem at 108% -8%, rgba(34, 211, 238, 0.18), transparent 60%),
+    radial-gradient(42rem 42rem at -8% 6%, rgba(99, 102, 241, 0.16), transparent 58%),
+    radial-gradient(36rem 36rem at 50% 118%, rgba(251, 191, 36, 0.1), transparent 60%);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.dark body {
+  background-color: #070b16;
+  background-image:
+    radial-gradient(48rem 48rem at 110% -10%, rgba(34, 211, 238, 0.12), transparent 60%),
+    radial-gradient(46rem 46rem at -10% 8%, rgba(99, 102, 241, 0.16), transparent 58%),
+    radial-gradient(38rem 38rem at 50% 120%, rgba(251, 191, 36, 0.05), transparent 60%);
+}
+
+/* Smooth the theme switch. */
+body,
+.theme-transition * {
+  transition:
+    background-color 0.25s ease,
+    border-color 0.25s ease,
+    color 0.25s ease;
+}
+
+/* Soften the Leaflet attribution to match either theme. */
+.leaflet-container {
+  background: var(--bg);
+  font-family: inherit;
+}
+.dark .leaflet-control-attribution {
+  background: rgba(19, 26, 44, 0.8) !important;
+  color: #94a3b8 !important;
+}
+.dark .leaflet-control-attribution a {
+  color: #cbd5e1 !important;
+}
