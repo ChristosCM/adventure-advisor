@@ -28,6 +28,7 @@ export function SportFilter({
             onClick={() => onToggle(id)}
             label={cfg.label}
             emoji={cfg.emoji}
+            title={`${cfg.description}\n\nTypes: ${cfg.types.join(" · ")}`}
           />
         );
       })}
@@ -40,19 +41,22 @@ function Chip({
   onClick,
   label,
   emoji,
+  title,
 }: {
   active: boolean;
   onClick: () => void;
   label: string;
   emoji?: string;
+  title?: string;
 }) {
   return (
     <button
       onClick={onClick}
+      title={title}
       className={
         "rounded-full px-3 py-1.5 text-sm font-medium transition " +
         (active
-          ? "bg-gradient-to-r from-indigo-500 to-cyan-400 text-white shadow-sm"
+          ? "bg-gradient-to-r from-teal-600 to-emerald-500 text-white shadow-sm"
           : "bg-slate-100 text-slate-600 hover:bg-slate-200 dark:bg-white/5 dark:text-slate-300 dark:hover:bg-white/10")
       }
     >

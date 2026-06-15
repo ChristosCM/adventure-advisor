@@ -4,83 +4,349 @@
     "lat": 51.165,
     "lon": -0.36,
     "activities": ["mountain-biking", "trail-running"],
-    "notes": "Classic singletrack and steep climbs ~1h from SW London."
+    "region": "Surrey · ~1h",
+    "notes": "Classic singletrack and steep climbs ~1h from SW London.",
+    "detail": {
+      "mountain-biking": "Ride the natural singletrack off Holmbury and Pitch Hill — Barry Knows Best and Yoghurt Pots — plus the Summer Lightning descent on Leith Hill.",
+      "trail-running": "Run the Greensand Way over Leith Hill Tower, Surrey's highest point at 294m, through pine and bracken."
+    }
   },
   {
     "name": "Swinley Forest",
     "lat": 51.39,
     "lon": -0.715,
     "activities": ["mountain-biking", "trail-running"],
-    "notes": "Fast, sandy purpose-built MTB trails — drains well after rain."
+    "region": "Berkshire · ~50m",
+    "notes": "Fast, sandy purpose-built MTB trails — drains well after rain.",
+    "detail": {
+      "mountain-biking": "Lap the blue and red Look Out trails — fast, bermy, sandy singletrack that rides well even after rain.",
+      "trail-running": "Sandy heath-and-pine tracks around The Look Out and Caesar's Camp."
+    }
   },
   {
     "name": "Box Hill",
     "lat": 51.25,
     "lon": -0.31,
     "activities": ["road-cycling", "trail-running", "running"],
-    "notes": "The Zig Zag Road climb; busy on weekends."
+    "region": "Surrey · ~50m",
+    "notes": "The Zig Zag Road climb; busy on weekends.",
+    "detail": {
+      "road-cycling": "Climb the Olympic Zig Zag Road — 2.5km of switchbacks at ~5% to the National Trust viewpoint.",
+      "trail-running": "Run the North Downs Way and the Stepping Stones loop across the chalk slopes.",
+      "running": "The stepping-stones circuit with a steep staircase finish for hill reps."
+    }
   },
   {
     "name": "Richmond Park",
     "lat": 51.442,
     "lon": -0.281,
     "activities": ["road-cycling", "running"],
-    "notes": "Closest spin / run loop; flat-ish, deer everywhere."
+    "region": "London · ~25m",
+    "notes": "Closest spin / run loop; flat-ish, deer everywhere.",
+    "detail": {
+      "road-cycling": "Spin the ~11km Tamsin Trail perimeter or the road loop — flat-ish, traffic-calmed, deer everywhere.",
+      "running": "Loop the Tamsin Trail (~11.5km) or join the parkrun on rolling gravel paths."
+    }
   },
   {
     "name": "Stanage Edge (Peak District)",
     "lat": 53.345,
     "lon": -1.633,
     "activities": ["climbing", "trail-running", "mountain-biking"],
-    "notes": "Iconic gritstone edge. Long drive; best as a full day."
+    "region": "Peak District · ~3h15",
+    "notes": "Iconic gritstone edge. Long drive; best as a full day.",
+    "detail": {
+      "climbing": "Gritstone trad and bouldering along 4km of edge — classics like Flying Buttress (HVD) and the Plantation boulders.",
+      "trail-running": "Run the edge-top path linking Stanage, Burbage and Higger Tor over gritstone moorland.",
+      "mountain-biking": "Rocky, technical bridleways — the Stanage causeway and the Cut Gate classic nearby."
+    }
   },
   {
     "name": "Portland (Dorset)",
     "lat": 50.535,
     "lon": -2.43,
     "activities": ["climbing"],
-    "notes": "Sunny south-coast limestone sport climbing; sea cliffs."
+    "region": "Dorset · ~3h",
+    "notes": "Sunny south-coast limestone sport climbing; sea cliffs.",
+    "detail": {
+      "climbing": "Sun-trap limestone sport on sea cliffs — hundreds of bolted routes from f4 to 8a around Cheyne Wears and the Cuttings."
+    }
   },
   {
     "name": "Snowdonia (Llanberis)",
     "lat": 53.12,
     "lon": -4.125,
     "activities": ["climbing", "trail-running", "mountain-biking"],
-    "notes": "Big mountain days; weather changes fast. Long haul from London."
+    "region": "Snowdonia · ~4h30",
+    "notes": "Big mountain days; weather changes fast. Long haul from London.",
+    "detail": {
+      "climbing": "Mountain trad on the Llanberis Pass crags — Dinas Cromlech's Cenotaph Corner (E1 5c) — plus slate-quarry sport.",
+      "trail-running": "Run the Llanberis Path or the Snowdon Horseshoe over Crib Goch on Wales' highest peak (1085m).",
+      "mountain-biking": "Raw mountain descents with the Antur Stiniog uplift park close by."
+    }
   },
   {
     "name": "Lake District (Keswick)",
     "lat": 54.6,
     "lon": -3.135,
     "activities": ["climbing", "trail-running", "mountain-biking"],
-    "notes": "Fells and crags; a 5h+ drive — weekend-trip territory."
+    "region": "Lake District · ~5h30",
+    "notes": "Fells and crags; a 5h+ drive — weekend-trip territory.",
+    "detail": {
+      "climbing": "Borrowdale volcanic trad — Shepherd's Crag's Little Chamonix (VD) and a lifetime of mountain routes.",
+      "trail-running": "Run the Catbells ridge or the Newlands Horseshoe on classic Lakeland fells.",
+      "mountain-biking": "Technical natural descents off Skiddaw plus the Whinlatter trail centre."
+    }
   },
   {
     "name": "Chiltern Hills (Wendover)",
     "lat": 51.76,
     "lon": -0.74,
     "activities": ["road-cycling", "trail-running", "mountain-biking"],
-    "notes": "Rolling chalk hills and beech woods NW of London."
+    "region": "Buckinghamshire · ~1h",
+    "notes": "Rolling chalk hills and beech woods NW of London.",
+    "detail": {
+      "road-cycling": "Roll the chalk lanes over Whiteleaf and Kop Hill — a steep 700m wall famous from hillclimb races.",
+      "trail-running": "Run the Ridgeway and Chiltern Way through beech woods and chalk combes.",
+      "mountain-biking": "Chalky bridleway singletrack around Wendover Woods and Aston Hill."
+    }
   },
   {
     "name": "Forest of Dean",
     "lat": 51.79,
     "lon": -2.58,
     "activities": ["mountain-biking", "trail-running"],
-    "notes": "Flowy MTB trails and a relaxed cycle network."
+    "region": "Gloucestershire · ~2h30",
+    "notes": "Flowy MTB trails and a relaxed cycle network.",
+    "detail": {
+      "mountain-biking": "Ride the flowy Verderers blue and the Freeminers red from Cannop, with a downhill uplift on weekends.",
+      "trail-running": "Run the Family Cycle Trail and forest tracks around Cannop Ponds."
+    }
   },
   {
     "name": "Harrison's Rocks (Tunbridge Wells)",
     "lat": 51.1,
     "lon": 0.155,
     "activities": ["climbing", "trail-running"],
-    "notes": "Southern sandstone bouldering / top-roping; dries slowly."
+    "region": "Kent · ~1h20",
+    "notes": "Southern sandstone bouldering / top-roping; dries slowly.",
+    "detail": {
+      "climbing": "Southern sandstone top-roping and bouldering — Unclimbed Wall and Slim Finger Crack on soft, slow-drying rock.",
+      "trail-running": "Run the High Weald woodland trails linking Harrison's and Eridge Rocks."
+    }
   },
   {
     "name": "South Downs (Devil's Dyke)",
     "lat": 50.885,
     "lon": -0.21,
     "activities": ["road-cycling", "trail-running", "running"],
-    "notes": "Open chalk downland with sea views above Brighton."
+    "region": "Sussex · ~1h45",
+    "notes": "Open chalk downland with sea views above Brighton.",
+    "detail": {
+      "road-cycling": "Climb the Devil's Dyke road out of Brighton and ride the quiet chalk-downland lanes.",
+      "trail-running": "Run the South Downs Way along the escarpment with sea views to Brighton.",
+      "running": "Open downland loops around Britain's largest dry valley."
+    }
+  },
+  {
+    "name": "Bedgebury Forest (Kent)",
+    "lat": 51.075,
+    "lon": 0.455,
+    "activities": ["mountain-biking", "trail-running", "running"],
+    "region": "Kent · ~1h15",
+    "notes": "Forestry England playground of pine and lakes with a proper graded MTB loop.",
+    "detail": {
+      "mountain-biking": "Ride the 13km red Singletrack Trail with its berms, drops and rock features, or warm up on the 9km blue Family Cycle Trail.",
+      "trail-running": "Loop the waymarked walking trails around Marshal's Lake on rolling pine-needle singletrack.",
+      "running": "Easy traffic-free laps on the firm gravel family routes through the National Pinetum."
+    }
+  },
+  {
+    "name": "Ashdown Forest (East Sussex)",
+    "lat": 51.065,
+    "lon": 0.091,
+    "activities": ["trail-running", "running", "road-cycling"],
+    "region": "East Sussex · ~1h15",
+    "notes": "High Weald heathland with big skies and one savage little road climb.",
+    "detail": {
+      "trail-running": "Run the Gill's Lap circular and the open heath linking the Wealdway and Vanguard Way over 223m Camp Hill.",
+      "running": "Loop the open-access heathland from Gill's Lap on sandy, springy tracks with long views.",
+      "road-cycling": "Take on Kidd's Hill, 'The Wall' — 1.5km at 8% (16% max), centrepiece of the Hell of the Ashdown sportive."
+    }
+  },
+  {
+    "name": "Friston Forest (East Sussex)",
+    "lat": 50.781,
+    "lon": 0.153,
+    "activities": ["trail-running", "running", "mountain-biking"],
+    "region": "East Sussex · ~2h",
+    "notes": "Beech woodland tucked behind the Seven Sisters cliffs and the Cuckmere meander.",
+    "detail": {
+      "trail-running": "String the forest tracks into the South Downs Way and the Seven Sisters clifftop for a coast-and-woods loop.",
+      "running": "Sheltered woodland laps from Butchershole, out of the wind off the chalk cliffs.",
+      "mountain-biking": "Ride the 9km red Jeremy Cole MTB Trail from Butchershole into fast beech singletrack."
+    }
+  },
+  {
+    "name": "Queen Elizabeth Country Park (Hampshire)",
+    "lat": 50.966,
+    "lon": -0.976,
+    "activities": ["mountain-biking", "trail-running", "running", "road-cycling"],
+    "region": "Hampshire · ~1h30",
+    "notes": "Steep chalk-and-beech hangers on the South Downs Way with proper graded MTB.",
+    "detail": {
+      "mountain-biking": "Hit the 7.5km red trail with the bermed 'Snakebite' section, or the flowier 6km blue.",
+      "trail-running": "Climb Butser Hill and run the South Downs Way ridge straight out of the visitor centre.",
+      "running": "Steep woodland loops up War Down and Holt Down for a lung-busting hill session.",
+      "road-cycling": "A base for the quiet Meon Valley lanes and South Downs gravel links."
+    }
+  },
+  {
+    "name": "Mam Tor & Hope Valley (Peak District)",
+    "lat": 53.349,
+    "lon": -1.811,
+    "activities": ["trail-running", "running", "road-cycling"],
+    "region": "Peak District · ~3h15",
+    "notes": "The Great Ridge skyline above Castleton plus one of Britain's most brutal road passes.",
+    "detail": {
+      "trail-running": "Run the Great Ridge from Mam Tor over Hollins Cross and Back Tor to Lose Hill on a flagged ridgeline.",
+      "running": "The ~11km Mam Tor circular from Castleton with a stiff climb to the 517m summit.",
+      "road-cycling": "Grind up Winnats Pass — a Cat 3 wall averaging ~10% with 20% ramps out of Castleton."
+    }
+  },
+  {
+    "name": "Cleeve Hill & the Cotswolds (Gloucestershire)",
+    "lat": 51.92,
+    "lon": -2.007,
+    "activities": ["road-cycling", "running", "trail-running"],
+    "region": "Cotswolds · ~2h30",
+    "notes": "The roof of the Cotswolds — golden-stone escarpment, classic climbs and the Cotswold Way.",
+    "detail": {
+      "road-cycling": "Climb Cleeve Hill (2.4km at 6%) and link Leckhampton and Birdlip Hills for an escarpment loop.",
+      "running": "Loop Cleeve Common, the Cotswolds' highest point at 330m, on open grassland tracks.",
+      "trail-running": "Run the Cotswold Way National Trail along the escarpment edge with valley-wide views."
+    }
+  },
+  {
+    "name": "Symonds Yat & Wye Valley (Herefordshire)",
+    "lat": 51.837,
+    "lon": -2.634,
+    "activities": ["climbing", "road-cycling"],
+    "region": "Wye Valley · ~2h45",
+    "notes": "Limestone crag above a wooded loop of the River Wye (partial closure since the 2023 rockfall).",
+    "detail": {
+      "climbing": "Trad limestone up to E-grades — classics like Red Rose Speedway (HVS 5a) and Whitt (VS 4c) on the reopened southern buttresses.",
+      "road-cycling": "Spin the riverside Wye Valley lanes and take on the short, steep Symonds Yat climb (~7% avg, 20% max)."
+    }
+  },
+  {
+    "name": "Cheddar Gorge (Mendips, Somerset)",
+    "lat": 51.282,
+    "lon": -2.766,
+    "activities": ["climbing", "road-cycling"],
+    "region": "Somerset · ~2h45",
+    "notes": "Britain's deepest gorge — soaring limestone walls and a top-100 road climb in one place.",
+    "detail": {
+      "climbing": "Long limestone trad and sport: the 5-pitch Coronation Street (E1 5b) or routes from f4 to 8c (south side open ~Oct–Mar).",
+      "road-cycling": "Ride the iconic Cheddar Gorge climb — 4.2km of hairpins and 16% ramps, #1 in Britain's 100 Greatest Cycling Climbs."
+    }
+  },
+  {
+    "name": "Avon Gorge (Bristol)",
+    "lat": 51.455,
+    "lon": -2.628,
+    "activities": ["climbing"],
+    "region": "Bristol · ~2h30",
+    "notes": "Bold, polished limestone right under the Clifton Suspension Bridge in the heart of the city.",
+    "detail": {
+      "climbing": "Technical, run-out trad — Main Wall classics like Great Central Route and Malbogies (both HVS 5a), or the easy multi-pitch Morpheus (VD 4b) at Sea Walls."
+    }
+  },
+  {
+    "name": "Swanage & Purbeck (Dorset)",
+    "lat": 50.592,
+    "lon": -2.005,
+    "activities": ["climbing", "trail-running", "running"],
+    "region": "Dorset · ~2h45",
+    "notes": "Jurassic limestone sea cliffs and ledges — the spiritual home of UK deep-water soloing.",
+    "detail": {
+      "climbing": "Sea-cliff trad in the Boulder Ruckle (Finale Groove, HVS 4c), bolted sport at Dancing Ledge, and DWS off Conner Cove.",
+      "trail-running": "Run the South West Coast Path from Swanage to Old Harry Rocks and around Durlston Head.",
+      "running": "Clifftop and downland loops above Durlston with the sea on one side the whole way."
+    }
+  },
+  {
+    "name": "Dartmoor (Haytor, Devon)",
+    "lat": 50.579,
+    "lon": -3.756,
+    "activities": ["climbing", "trail-running", "running"],
+    "region": "Devon · ~3h30",
+    "notes": "Wild granite moor of weathered tors, bog and big skies for a proper weekend escape.",
+    "detail": {
+      "climbing": "Granite tor routes and bouldering — Raven's Gully (Severe 4b) on Haytor and Bonehill Rocks problems from V4 upward.",
+      "trail-running": "Run the open moor between the tors — the Ten Tors and Two Moors Way lines cross classic wild terrain.",
+      "running": "Loop Haytor and Hound Tor on grassy moorland tracks with granite underfoot."
+    }
+  },
+  {
+    "name": "Exmoor (Lynton & Porlock, Devon/Somerset)",
+    "lat": 51.23,
+    "lon": -3.829,
+    "activities": ["road-cycling", "trail-running", "running"],
+    "region": "Exmoor · ~3h45",
+    "notes": "Coastal moorland plunging to the sea, home to the UK's steepest A-road.",
+    "detail": {
+      "road-cycling": "Climb Porlock Hill, Britain's steepest A-road at up to 1-in-4, then haul up to Dunkery Beacon (519m).",
+      "trail-running": "Run the South West Coast Path through the Valley of Rocks and the Two Moors Way out of Lynmouth.",
+      "running": "Moor-and-coast loops above Lynton on grassy clifftop and combe paths."
+    }
+  },
+  {
+    "name": "Brecon Beacons (Pen y Fan, Powys)",
+    "lat": 51.883,
+    "lon": -3.437,
+    "activities": ["trail-running", "running", "road-cycling"],
+    "region": "Brecon Beacons · ~3h30",
+    "notes": "South Wales' highest peaks — sweeping grassy ridges made for big mountain days.",
+    "detail": {
+      "trail-running": "Run the Fan Dance from Storey Arms over Corn Du and Pen y Fan (886m), extending to Cribyn and Fan y Big.",
+      "running": "The Pen y Fan and Corn Du horseshoe — a runnable summit circuit on engineered mountain paths.",
+      "road-cycling": "Climb the A470 pass over Storey Arms and explore the quiet valley roads around Talybont."
+    }
+  },
+  {
+    "name": "Afan Forest Park (Glyncorrwg, South Wales)",
+    "lat": 51.751,
+    "lon": -3.81,
+    "activities": ["mountain-biking", "trail-running"],
+    "region": "South Wales · ~3h15",
+    "notes": "Steep, forested valleys laced with some of the best purpose-built singletrack in Britain.",
+    "detail": {
+      "mountain-biking": "Ride the 24km red Y Wâl with its famous Zig Zags descent, the flowing Penhydd, or the 44km black W2 epic.",
+      "trail-running": "Follow the forest valley trails and old tramways climbing high above Glyncorrwg."
+    }
+  },
+  {
+    "name": "BikePark Wales (Merthyr Tydfil)",
+    "lat": 51.718,
+    "lon": -3.378,
+    "activities": ["mountain-biking"],
+    "region": "South Wales · ~3h",
+    "notes": "The UK's biggest uplift-served gravity park — 50+ graded trails and a van to the top.",
+    "detail": {
+      "mountain-biking": "Take the uplift and pick your line — the UK's longest blue descent Terry's Belly, fast natural Vicious Valley (red), or expert Dai Hard (black)."
+    }
+  },
+  {
+    "name": "Coed y Brenin (Snowdonia, Gwynedd)",
+    "lat": 52.824,
+    "lon": -3.896,
+    "activities": ["mountain-biking", "trail-running"],
+    "region": "Snowdonia · ~4h30",
+    "notes": "The UK's original purpose-built trail centre, deep in the forests of southern Eryri.",
+    "detail": {
+      "mountain-biking": "Ride the flowy blue MinorTaur, the technical red Temtiwr and Cyflym Coch, or commit to the 38km black Beast of Brenin.",
+      "trail-running": "Dedicated waymarked trail-running routes wind through the forest alongside the bike trails."
+    }
   }
 ]

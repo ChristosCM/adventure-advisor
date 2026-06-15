@@ -73,8 +73,8 @@ export default function MapView({ home, spots, dark }: Props) {
         center={[home.lat, home.lon]}
         radius={8}
         pathOptions={{
-          color: dark ? "#818cf8" : "#4338ca",
-          fillColor: dark ? "#a5b4fc" : "#6366f1",
+          color: dark ? "#2dd4bf" : "#0f766e",
+          fillColor: dark ? "#5eead4" : "#14b8a6",
           fillOpacity: 1,
         }}
       >

@@ -24,7 +24,7 @@ export function HeroCard({ rec }: { rec: Recommendation }) {
   const ground = groundConditions(w.recentPrecipMm, rec.activity);
 
   return (
-    <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-indigo-600 via-indigo-500 to-cyan-500 p-5 text-white shadow-lg">
+    <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-teal-700 via-teal-600 to-emerald-500 p-5 text-white shadow-lg">
       {/* decorative glow */}
       <div className="pointer-events-none absolute -right-10 -top-12 h-40 w-40 rounded-full bg-amber-300/30 blur-2xl" />
 
@@ -37,17 +37,25 @@ export function HeroCard({ rec }: { rec: Recommendation }) {
             <span className="mr-1.5">{rec.emoji}</span>
             {rec.activityLabel}
           </h2>
-          <p className="truncate text-sm text-white/85">📍 {rec.location.name}</p>
+          <p className="truncate text-sm text-white/85">
+            📍 {rec.location.name}
+            {rec.location.region ? ` · ${rec.location.region}` : ""}
+          </p>
           <p className="mt-1 text-sm font-medium text-white/95">
             {reasonFor(rec)}
           </p>
+          {rec.location.detail?.[rec.activity] && (
+            <p className="mt-1 text-sm leading-relaxed text-white/85">
+              {rec.location.detail[rec.activity]}
+            </p>
+          )}
           <p className="mt-0.5 text-sm font-semibold text-amber-200">
             ⏱ {bestWindowText(rec.activity, w)}
           </p>
         </div>
 
         <div className="flex shrink-0 flex-col items-center">
-          <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-white/20 text-2xl font-extrabold backdrop-blur-sm">
+          <div className="flex h-16 w-16 items-center justify-center rounded-2xl bg-black/25 text-2xl font-extrabold text-white shadow-md ring-1 ring-white/25 backdrop-blur-sm">
             {rec.finalScore}
           </div>
           <span className="mt-1 text-[10px] font-medium uppercase tracking-wide text-white/70">

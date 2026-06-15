@@ -48,7 +48,7 @@ export function RecommendationCard({
   const ground = groundConditions(w.recentPrecipMm, rec.activity);
 
   return (
-    <div className="group flex gap-4 rounded-2xl border border-white/60 bg-white/70 p-4 shadow-sm backdrop-blur-md transition hover:-translate-y-0.5 hover:shadow-md dark:border-white/10 dark:bg-[#131a2c]/70 dark:shadow-none dark:hover:border-white/20">
+    <div className="group flex gap-4 rounded-2xl border border-white/60 bg-white/70 p-4 shadow-sm backdrop-blur-md transition hover:-translate-y-0.5 hover:shadow-md dark:border-white/10 dark:bg-[#0e221d]/70 dark:shadow-none dark:hover:border-white/20">
       {/* Score */}
       <div className="flex flex-col items-center justify-center">
         <span className="text-[11px] font-semibold text-slate-400 dark:text-slate-500">
@@ -74,6 +74,7 @@ export function RecommendationCard({
             </h3>
             <p className="mt-0.5 truncate text-sm text-slate-500 dark:text-slate-400">
               📍 {rec.location.name}
+              {rec.location.region ? ` · ${rec.location.region}` : ""}
             </p>
           </div>
           <span className="shrink-0 rounded-full bg-slate-100 px-2.5 py-1 text-xs font-semibold text-slate-600 dark:bg-white/10 dark:text-slate-300">
@@ -81,7 +82,7 @@ export function RecommendationCard({
           </span>
         </div>
 
-        <p className="mt-2 text-xs font-medium text-indigo-600 dark:text-cyan-400">
+        <p className="mt-2 text-xs font-medium text-teal-600 dark:text-emerald-400">
           {reasonFor(rec)} · ⏱ {bestWindowText(rec.activity, w)}
         </p>
 
@@ -107,6 +108,12 @@ export function RecommendationCard({
             </span>
           )}
         </div>
+
+        {rec.location.detail?.[rec.activity] && (
+          <p className="mt-2 text-xs leading-relaxed text-slate-500 dark:text-slate-400">
+            {rec.location.detail[rec.activity]}
+          </p>
+        )}
 
         <button
           onClick={() => setOpen((o) => !o)}

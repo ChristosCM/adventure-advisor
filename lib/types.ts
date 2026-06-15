@@ -11,6 +11,11 @@ export interface Location {
   lon: number;
   activities: ActivityId[];
   notes?: string;
+  /** Short area + rough drive time from home, e.g. "Kent · ~1h15". */
+  region?: string;
+  /** Per-activity specifics — what you actually do here for that sport
+   *  (named trails / crags / routes / climbs). Keyed by ActivityId. */
+  detail?: Partial<Record<ActivityId, string>>;
 }
 
 /** One hour of forecast, used to build the hourly timeline + "best window". */

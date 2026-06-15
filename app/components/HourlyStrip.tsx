@@ -32,8 +32,13 @@ export function HourlyStrip({
   const labelColor =
     tone === "light" ? "text-white/80" : "text-slate-400 dark:text-slate-500";
 
+  // On the hero card the green "good" cells would otherwise blend into the
+  // teal-emerald gradient, so sit the heatmap on a dark translucent track.
+  const trackClass =
+    tone === "light" ? "rounded-lg bg-black/25 p-1.5 ring-1 ring-white/10" : "";
+
   return (
-    <div>
+    <div className={trackClass}>
       {/* heatmap */}
       <div className="flex gap-px overflow-hidden rounded-md">
         {hours.map((h) => (
@@ -44,9 +49,9 @@ export function HourlyStrip({
             )}° · ${h.point.precipProb}% rain · ${Math.round(
               h.point.gust,
             )} km/h gust · suitability ${h.score}`}
-            className={`h-6 flex-1 ${cellColor(h.score)} ${
-              inWin(h.hour) ? "" : "opacity-40"
-            }`}
+            className={`h-6 flex-1 ring-1 ring-inset ring-black/5 ${cellColor(
+              h.score,
+            )} ${inWin(h.hour) ? "" : "opacity-40"}`}
           />
         ))}
       </div>

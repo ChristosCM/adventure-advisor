@@ -141,7 +141,7 @@ export default function Home() {
           <div>
             <h1 className="text-xl font-bold tracking-tight text-slate-900 dark:text-slate-50">
               Adventure{" "}
-              <span className="bg-gradient-to-r from-indigo-500 to-cyan-400 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-teal-600 to-orange-500 bg-clip-text text-transparent">
                 Advisor
               </span>
             </h1>
@@ -155,7 +155,7 @@ export default function Home() {
       </header>
 
       {/* Controls */}
-      <section className="mb-5 rounded-2xl border border-white/60 bg-white/70 p-4 shadow-sm backdrop-blur-md dark:border-white/10 dark:bg-[#131a2c]/70">
+      <section className="mb-5 rounded-2xl border border-white/60 bg-white/70 p-4 shadow-sm backdrop-blur-md dark:border-white/10 dark:bg-[#0e221d]/70">
         <div className="flex flex-wrap items-end gap-4">
           <label className="flex flex-col text-sm font-medium text-slate-700 dark:text-slate-300">
             Day 1
@@ -178,7 +178,7 @@ export default function Home() {
           <button
             onClick={fetchRecs}
             disabled={loading}
-            className="rounded-lg bg-gradient-to-r from-indigo-500 to-cyan-400 px-5 py-2 font-semibold text-white shadow-sm transition hover:opacity-90 disabled:opacity-50"
+            className="rounded-lg bg-gradient-to-r from-orange-500 to-amber-400 px-5 py-2 font-semibold text-white shadow-sm transition hover:opacity-90 disabled:opacity-50"
           >
             {loading ? "Checking…" : "Find adventures"}
           </button>
@@ -238,7 +238,7 @@ export default function Home() {
                     className={
                       "rounded-md px-2.5 py-1 font-medium transition " +
                       (sortBy === s.key
-                        ? "bg-gradient-to-r from-indigo-500 to-cyan-400 text-white"
+                        ? "bg-gradient-to-r from-teal-600 to-emerald-500 text-white"
                         : "text-slate-500 hover:text-slate-800 dark:text-slate-400 dark:hover:text-slate-100")
                     }
                   >
@@ -255,7 +255,7 @@ export default function Home() {
           {rest.length > 11 && (
             <button
               onClick={() => setShowAll((s) => !s)}
-              className="text-sm font-medium text-indigo-600 hover:underline dark:text-cyan-400"
+              className="text-sm font-medium text-teal-600 hover:underline dark:text-emerald-400"
             >
               {showAll
                 ? "Show fewer"

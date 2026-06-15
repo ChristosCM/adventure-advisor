@@ -18,6 +18,10 @@ export interface ActivityConfig {
   id: ActivityId;
   label: string;
   emoji: string;
+  /** One line on what makes a good day for this sport. */
+  description: string;
+  /** Sub-disciplines / types of this activity, shown as tags. */
+  types: string[];
   idealTempMin: number;
   idealTempMax: number;
   coldPenalty: number;
@@ -36,6 +40,9 @@ export const ACTIVITIES: Record<ActivityId, ActivityConfig> = {
     id: "climbing",
     label: "Climbing",
     emoji: "🧗",
+    description:
+      "A good day is dry rock with friction, a venue that matches your style and grade, and tides or seasonal closures on your side.",
+    types: ["Bouldering", "Sport", "Trad", "Top-rope", "Deep-water solo", "Multi-pitch"],
     idealTempMin: 10,
     idealTempMax: 22,
     coldPenalty: 2.5,
@@ -52,6 +59,9 @@ export const ACTIVITIES: Record<ActivityId, ActivityConfig> = {
     id: "road-cycling",
     label: "Road cycling",
     emoji: "🚴",
+    description:
+      "A good day is quiet tarmac, a named climb or two to test the legs, and a long loop linking big views with a café stop.",
+    types: ["Climbing", "Sportive", "Endurance loops", "Gravel", "Audax"],
     idealTempMin: 12,
     idealTempMax: 26,
     coldPenalty: 2,
@@ -69,6 +79,9 @@ export const ACTIVITIES: Record<ActivityId, ActivityConfig> = {
     id: "mountain-biking",
     label: "Mountain biking",
     emoji: "🚵",
+    description:
+      "A good day is dry-ish dirt, graded trails or natural singletrack, and enough descent to make the climbs worth it.",
+    types: ["Trail-centre flow", "Natural singletrack", "Downhill/uplift", "Enduro", "Cross-country", "Bikepacking"],
     idealTempMin: 6,
     idealTempMax: 24,
     coldPenalty: 1.2,
@@ -85,6 +98,9 @@ export const ACTIVITIES: Record<ActivityId, ActivityConfig> = {
     id: "running",
     label: "Running",
     emoji: "🏃",
+    description:
+      "A good day is firm, traffic-free ground and a clear loop — parkland, woodland or downland — to settle into a rhythm.",
+    types: ["Road", "Parkrun", "Long run", "Hill reps", "Intervals"],
     idealTempMin: 4,
     idealTempMax: 18,
     coldPenalty: 1,
@@ -101,6 +117,9 @@ export const ACTIVITIES: Record<ActivityId, ActivityConfig> = {
     id: "trail-running",
     label: "Trail running",
     emoji: "🥾",
+    description:
+      "A good day is off-road terrain with climb and reward — ridgelines, coast paths and forest singletrack that mix views with technical footing.",
+    types: ["Fell/mountain", "Coastal path", "Forest singletrack", "Ultra-distance", "Skyrunning"],
     idealTempMin: 4,
     idealTempMax: 20,
     coldPenalty: 1,
